@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inika:wght@400;700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inika", serif;
+}
+
+body {
+  height: 1180px;
+  background-color: #ffe8ce;
+}
+
+.header {
+  background-image: url("../assets/landing_page_background2.png"), url("../assets/landing_page_background.png");
+  height: 400px;
+  background-size: 70%, 50%;
+  background-repeat: no-repeat;
+  background-position-x: right, 0;
+  background-position-y: 0, -60px;
+  background-color: rgba(0, 0, 0, 0.63);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  box-shadow: 0 10px 7px rgb(117, 117, 117);
+  display: flex;
+}
+
+.kanan {
+  display: flex;
+  padding: 6% 0;
+  width: 600px;
+  align-items: center;
+  margin: 0 70px 0 auto;
+  flex-direction: column;
+}
+
+.kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  color: #f1f1f1;
+  flex-direction: column;
+  font-size: 60px;
+}
+
+.kiri p {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 50px;
+}
+
+.kiri p:first-child {
+  padding-top: 5px;
+  border-top: 5px solid rgb(255, 255, 255);
+}
+
+.kiri p:last-child {
+  position: relative;
+  left: 40px;
+  border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text p {
+  color: #f1f1f1;
+}
+
+.header-parent-text {
+  width: 500px;
+}
+
+.header-parent-text p {
+  font-size: 45px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
+}
+
+.header-mini-text {
+  margin: 20px 0;
+  width: 455px;
+}
+
+.header-mini-text p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.header-button a {
+  padding: 3px 10px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bottom-header {
+  border-bottom: 1px solid #9d7952;
+  margin: auto;
+  padding-top: 1rem;
+  width: 150px;
+}
+
+.bottom-header p {
+  text-align: center;
+}
+
+.container-artikel {
+  padding-top: 3rem;
+  width: 80%;
+  margin: auto;
+}
+
+.judul-artikel p {
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  font-family: "Newsreader", serif;
+  font-weight: 500;
+}
+
+.judul-artikel p:last-child {
+  margin: 10px 0;
+  font-size: 15px;
+  position: relative;
+  right: 175px;
+}
