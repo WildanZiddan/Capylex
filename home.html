@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capynews</title>
     <link rel="stylesheet" href="css/home.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="header">
       <div class="kiri">
-        <p>Capy</p>
-        <p>News</p>
+        <img src="assets/logo.png" alt="" />
       </div>
       <div class="kanan">
         <div class="header-text">
@@ -18,7 +18,7 @@
             <p>Sulitnya Rakyat Menengah Bawah Di Jakarta Utara</p>
           </div>
           <div class="header-mini-text">
-            <p>Badan Pusat Statistik (BPS) Provinsi DKI Jakarta menyatakan, wilayah dengan angka kemiskinan ekstrem terbanyak berada di Jakarta Utara.</p>
+            <p>Badan Pusat Statistik (BPS) Provinsi DKI Jakarta menyatakan, <br />wilayah dengan angka kemiskinan ekstrem terbanyak berada di Jakarta <br />Utara.</p>
           </div>
           <div class="header-button">
             <a href="#">Selanjutnya</a>
@@ -26,16 +26,44 @@
         </div>
       </div>
     </div>
-    <div class="bottom-header">
-      <p>Jakarta Utara</p>
-    </div>
+
     <section id="artikel">
+      <div class="bottom-header">
+        <p>Jakarta Utara</p>
+      </div>
       <div class="container-artikel">
         <div class="judul-artikel">
           <p>Posisi kemiskinan ektrem di Jakarta pada maret 2022 mencapai 0,89 %</p>
-          <p>kata Suryana di Balai Kota, Jakarta, Senin (30/1/2023).</p>
+        </div>
+        <div class="isi-artikel">
+          <div class="deskripsi-artikel">
+            <div class="desk-kiri">
+              <p>
+                Saat survey kami masih menemukan sample-sample rumah tangga sebagai penduduk kemiskinan <span>ekstrem</span>. Tadi arahan Pj Gubernur akan menelusuri dan melakukan verifikasi data, serta akan dilakukan intervensi terbaik
+                agar kemiskinan ekstrem <br />di Jakarta bisa dituntaskan,
+              </p>
+            </div>
+            <div class="desk-kanan">
+              <p>
+                Kesimpulan dalam waktu dekat kita akan menetapkan sample-sample untuk memastikan data-data yang ada di carik yang sudah terkoneksi den <span>BKKBN</span> itu sasarannya tepat. Karena akan ada kaitannya dengan penanganan
+                miskin ekstrem juga dengan stunting, dikaitkan dengan bantuan-bantuan di DKI yang cukup banyak. Dari jumlah bantuan yang ada harusnya sudah tidak ada penduduk miskin ekstrem.
+              </p>
+            </div>
+          </div>
+          <div class="foto-artikel">
+            <div class="foto-kiri">
+              <img src="assets/foto-artikel1.png" alt="" />
+            </div>
+            <div class="foto-kanan">
+              <img src="assets/fotoartikel2.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
