@@ -8,9 +8,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header -->
+
     <div class="header">
       <div class="kiri">
-        <img src="assets/logo.png" alt="" />
+        <img src="assets/logo.png" a lt="" />
       </div>
       <div class="kanan">
         <div class="header-text">
@@ -21,11 +23,13 @@
             <p>Badan Pusat Statistik (BPS) Provinsi DKI Jakarta menyatakan, <br />wilayah dengan angka kemiskinan ekstrem terbanyak berada di Jakarta <br />Utara.</p>
           </div>
           <div class="header-button">
-            <a href="#">Selanjutnya</a>
+            <a href="#artikel">Selanjutnya</a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- End Header -->
 
     <section id="artikel">
       <div class="bottom-header">
@@ -51,19 +55,26 @@
             </div>
           </div>
           <div class="foto-artikel">
-            <div class="foto-kiri">
+            <div class="foto-kiri" data-aos="fade-right" data-aos-duration="1000">
               <img src="assets/foto-artikel1.png" alt="" />
             </div>
-            <div class="foto-kanan">
+            <div class="foto-kanan" data-aos="fade-left" data-aos-duration="2000">
               <img src="assets/fotoartikel2.png" alt="" />
             </div>
+          </div>
+          <div class="bottom-artikel">
+            <p>
+              Untuk mengukur kemiskinan, BPS ( Badan Pusat Statistik ) menggunakan konsep kemampuan memenuhi kebutuhan dasar (basic needs approach). Dengan pendekatan ini, kemiskinan dipandang sebagai ketidakmampuan dari sisi ekonomi untuk
+              memenuhi kebutuhan dasar makanan dan bukan makanan yang diukur dari sisi pengeluaran. Jadi Penduduk Miskin adalah penduduk yang memiliki rata-rata pengeluaran perkapita perbulan dibawah garis <span>kemiskinan</span>.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <script>
-      AOS.init();
-    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      AOS.init(); // Initialize AOS
+    </script>
   </body>
 </html>

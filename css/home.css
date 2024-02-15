@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inika", serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -184,4 +185,16 @@ body {
   width: 600px;
   position: relative;
   top: 100px;
+}
+
+.bottom-artikel {
+  padding-top: 10rem;
+}
+
+.bottom-artikel p {
+  font-size: 20px;
+}
+
+.bottom-artikel p span {
+  font-weight: 900;
 }
