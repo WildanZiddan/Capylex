@@ -148,6 +148,7 @@ body {
   align-items: center;
   padding: 10px 20px;
 }
+
 .isi-artikel {
   padding-top: 1rem;
   display: flex;
@@ -462,4 +463,65 @@ body {
 .angka p:last-child {
   font-size: 20px;
 }
+
 /* End Artikel 2 */
+
+/* Artikel 3 */
+
+.judul-artikel-3 {
+  padding: 3rem 10px;
+  display: flex;
+  align-items: center;
+}
+
+.judul-artikel-3 p {
+  text-align: center;
+  color: #3f3f3f;
+  text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
+  font-size: 35px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  width: 450px;
+  margin: auto;
+}
+
+.border-artikel-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-artikel-3 span {
+  display: block;
+  width: 400px;
+  height: 3px;
+  background-color: #2d4356;
+  margin: 3px 0;
+  display: flex;
+}
+
+.artikel-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.isi-artikel-3 {
+  width: 90%;
+  margin: auto;
+  height: 1000px;
+}
+
+.src-foto-artikel-3 p {
+  text-align: center;
+  font-size: 20px;
+  margin-right: auto;
+  text-align: left;
+  font-family: "Bebas Neue", serif;
+  font-weight: 500;
+  border: 1px solid black;
+  display: flex;
+  width: 150px;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* End Artikel */
