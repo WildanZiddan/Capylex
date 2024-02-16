@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 2000px;
+  height: 3000px;
   background-color: #ffe8ce;
 }
 
@@ -129,7 +129,7 @@ body {
 .judul-artikel p:nth-child(1) {
   text-align: center;
   color: #3f3f3f;
-  filter: drop-shadow(0px 3px 4px #3f3f3f);
+  text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
   font-size: 30px;
   font-family: "Bebas Neue", serif;
   font-weight: 500;
@@ -301,7 +301,7 @@ body {
 .judul-artikel-2 p {
   text-align: center;
   color: #3f3f3f;
-  filter: drop-shadow(0px 3px 4px #3f3f3f);
+  text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
   font-size: 35px;
   font-family: "Bebas Neue", serif;
   font-weight: 500;
@@ -327,6 +327,7 @@ body {
   width: 85%;
   margin: auto;
   display: flex;
+  flex-direction: column;
   padding-top: 3rem;
 }
 
@@ -339,5 +340,126 @@ body {
 
 .desk-kanan {
   margin-top: 80px;
+}
+
+.foto-artikel-2 .vektor-artikel {
+  display: flex;
+}
+
+.foto-artikel-2 .vektor-artikel .vektor-1 img {
+  position: relative;
+  left: 260px;
+  width: 30px;
+}
+
+.foto-artikel-2 .vektor-artikel .vektor-2 img {
+  position: relative;
+  left: 350px;
+  top: 200px;
+  width: 100px;
+}
+
+.foto-artikel-2 .foto-artikel {
+  display: flex;
+}
+
+.foto-artikel-2 .foto-artikel .foto1 img {
+  position: relative;
+  top: -100px;
+  left: 400px;
+  width: 500px;
+}
+
+.foto-artikel-2 .foto-artikel .foto2 img {
+  position: relative;
+  width: 180px;
+  top: 30px;
+  left: -420px;
+}
+
+.foto-artikel-2 .foto-artikel .foto3 img {
+  position: relative;
+  width: 300px;
+  bottom: 300px;
+  left: -630px;
+}
+
+.bottom-artikel-2 {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 6rem;
+}
+
+.bottom-artikel-2 p {
+  font-size: 17px;
+}
+
+.bottom-artikel-2 p span {
+  font-weight: bolder;
+}
+
+.data-kemiskinan-artikel-2 {
+  padding: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-image: url("../assets/background-data-kemiskinan.jpg");
+}
+
+.data-kemiskinan-artikel-2 p {
+  color: #ffffff;
+}
+
+.judul-data-kemiskinan p {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 60px;
+  font-size: 35px;
+}
+
+.desk-data-kemiskinan {
+  width: 880px;
+  font-weight: lighter;
+  padding-top: 1rem;
+}
+
+.desk-data-kemiskinan p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.desk-data-kemiskinan p span {
+  font-style: italic;
+}
+
+.desk-data-kemiskinan p span:last-child {
+  font-style: normal;
+  font-weight: 900;
+}
+
+.angka-kemiskinan {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6rem;
+}
+
+.angka {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 30px 10px;
+  background-color: #000000cc;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.angka p {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.angka p:last-child {
+  font-size: 20px;
 }
 /* End Artikel 2 */
