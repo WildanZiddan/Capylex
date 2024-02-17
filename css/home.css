@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inika:wght@400;700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -610,11 +612,94 @@ footer {
   height: 400px;
   background-image: url("../assets/footer-background.png");
   background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+footer p,
+a,
+button {
+  font-family: "Poppins", sans-serif;
 }
 
 .container-footer {
   width: 80%;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+}
+
+.logo-text {
+  width: 380px;
+}
+
+.logo-text img {
+  width: 300px;
+}
+
+.logo-text p {
+  color: #ffffff;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.judul-menu p {
+  color: #9290c3;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+}
+
+.list-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.judul-form p {
+  color: #9290c3;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.input-form input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+}
+
+.input-form button {
+  border-radius: 20px;
+  border: none;
+  background-color: #b7c4cf;
+  margin: 0 5px;
+  padding: 10px 15px;
+}
+
+.social-media {
+  display: flex;
+  margin: 10px 0;
+  margin-right: 15px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #9290c3;
 }
 
 /* End Footer */
