@@ -35,6 +35,9 @@ body {
   background-color: #ffe8ce;
 }
 
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
 .header {
   background-image: url("../assets/landing_page_background2.png"), url("../assets/landing_page_background.png");
   height: 400px;
@@ -115,13 +118,22 @@ body {
   text-align: center;
 }
 
+/* ---------- RESPONSIVE HEADER 480 ---------- */
 @media screen and (max-width:480px) {
-  * {
-    overflow-x: hidden;
+  ::-webkit-scrollbar-track{
+    display: none;
+  }
+  ::-webkit-scrollbar
+  {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb
+  {
+    display: none;
   }
   .header{
     background-image: url("../assets/landing_page_background2_mobile.png"), url("../assets/landing_page_background_mobile.png");
-    height: 1200px;
+    height: 1300px;
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     background-position-x: center, 0;
@@ -136,11 +148,11 @@ body {
     background-image: url(../assets/landing_page_background2_mobile.png);
     background-size: cover;
     height: 100%;
-    padding: 6% 0;
-    width: 600px;
+    padding: 6% 5%;
+    width: 100%;
     align-items: center;
-    margin: 0 70px 0 auto;
-    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px 0 auto;
   }
   
   .kiri {
@@ -154,41 +166,31 @@ body {
     background-repeat: no-repeat;
     justify-content: left;
     align-items: left;
-    margin-left: 1%;
-    padding: 35% 40% 35% 0;
+    margin-left: 0;
+    padding: 60% 5% 60% 0;
   }
   
   .kiri img {
     width: 300px;
     height: 150px;
   }
-  
-  .header-text {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .header-text p {
-    color: #f1f1f1;
-  }
-  
   .header-parent-text {
-    width: 500px;
+    width: 80%;
   }
   
   .header-parent-text p {
-    font-size: 45px;
+    font-size: 28px;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 3px;
   }
   
   .header-mini-text {
     margin: 20px 0;
-    width: 510px;
+    width: 100%;
   }
   
   .header-mini-text p {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: lighter;
   }
   
@@ -211,6 +213,9 @@ body {
   }
 }
 
+/*-----------------------------------*\
+  #ARTIKEL
+\*-----------------------------------*/
 #artikel {
   background-image: url("../assets/background-artikel.png");
   background-size: cover;
@@ -384,8 +389,140 @@ body {
   right: 590px;
   bottom: 50px;
 }
-
-/* End Artikel 1 */
+/* ---------- RESPONSIVE ARTIKEL1 480 ---------- */
+@media screen and (max-width:480px) {
+  #artikel {
+    background-image: url("../assets/background-artikel.png");
+    background-size: cover;
+    background-position: center;
+    height: 300vh;
+  }
+  .artikel-1 {
+    padding-top: 3rem;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  .judul-artikel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .judul-artikel p:nth-child(1) {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  
+  .judul-artikel p:nth-child(2) {
+    display: none;
+  }
+  
+  .vektor-artikel {
+    display: flex;
+    height: 9px;
+  }
+  
+  .vektor-1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+  
+  .vektor-artikel .vektor-1 img {
+    position: relative;
+    left: 170px;
+    top: 40px;
+    width: 90px;
+  }
+  
+  .vektor-artikel .vektor-1 p {
+    position: relative;
+    bottom: 20px;
+    left: 270px;
+    width: 90px;
+    font-size: 12px;
+  }
+  
+  .vektor-2 {
+    position: relative;
+    top: 0;
+    bottom: 100px;
+  }
+  
+  .vektor-2 img {
+    position: relative;
+    top: 260px;
+    left: 240px;
+    width: 40px;
+  }
+  
+  .vektor-2 p {
+    position: relative;
+    top: 220px;
+    left: 70px;
+    width: 160px;
+    font-size: 12px;
+  }
+  
+  .vektor-3 {
+    position: relative;
+    bottom: 300px;
+    right: 160px;
+  }
+  
+  .vektor-3 img {
+    position: relative;
+    top: 490px;
+    right: 80px;
+    width: 55px;
+  }
+  
+  .vektor-3 p {
+    position: relative;
+    top: 460px;
+    right: 20px;
+    width: 90px;
+    font-size: 12px;
+  }
+  
+  .foto-artikel {
+    margin: auto;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 8rem;
+    display: flex;
+  }
+  
+  .foto1 img {
+    position: relative;
+    top: 70px;
+    left: 160px;
+    width: 174px;
+  }
+  
+  .foto2 img {
+    width: 60px;
+    position: relative;
+    right: 15px;
+    bottom: 50px;
+  }
+  
+  .foto3 img {
+    width: 125px;
+    position: relative;
+    left: 0;
+    bottom: 40px;
+  }
+  
+  .foto4 img {
+    width: 100px;
+    position: relative;
+    right: 310px;
+    bottom: 50px;
+  }
+}
 
 /* Artikel 2 */
 
