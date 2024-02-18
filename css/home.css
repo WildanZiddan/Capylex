@@ -619,6 +619,7 @@ footer {
 footer p,
 a,
 button {
+  color: #000000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -639,7 +640,7 @@ button {
 }
 
 .logo-text p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .menu-footer {
@@ -648,7 +649,7 @@ button {
 }
 
 .judul-menu p {
-  color: #9290c3;
+  color: #000000;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -661,7 +662,7 @@ button {
 }
 
 .list-menu a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -671,7 +672,7 @@ button {
 }
 
 .judul-form p {
-  color: #9290c3;
+  color: #000000;
   font-size: 20px;
   margin: 10px 0;
 }
@@ -685,7 +686,8 @@ button {
 .input-form button {
   border-radius: 20px;
   border: none;
-  background-color: #b7c4cf;
+  color: #ffffff;
+  background-color: #000000;
   margin: 0 5px;
   padding: 10px 15px;
 }
@@ -699,7 +701,7 @@ button {
 .social-media a {
   margin: 0 10px;
   font-size: 20px;
-  color: #9290c3;
+  color: #000000;
 }
 
 /* End Footer */
