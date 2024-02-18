@@ -36,6 +36,9 @@ body {
 }
 
 @media screen and (max-width:480px) {
+  * {
+    overflow-x: hidden;
+  }
   body {
     overflow-x: hidden;
   }
@@ -1309,7 +1312,7 @@ button {
   }
   
   .container-footer {
-    width: 90%;
+    width: 91%;
     justify-content: center;
     display: flex;
     flex-direction: column;
