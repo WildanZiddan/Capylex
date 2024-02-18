@@ -35,6 +35,12 @@ body {
   background-color: #ffe8ce;
 }
 
+@media screen and (max-width:480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -874,18 +880,19 @@ body {
   .judul-data-kemiskinan p {
     font-family: "Bebas Neue", sans-serif;
     margin-top: 60px;
-    font-size: 35px;
+    font-size: 13px;
+    text-align: center;
   }
   
   .desk-data-kemiskinan {
-    width: 880px;
+    width: 300px;
     font-weight: lighter;
     padding-top: 1rem;
   }
   
   .desk-data-kemiskinan p {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 6px;
     line-height: 20px;
   }
   
@@ -925,8 +932,9 @@ body {
   }
 }
 
-/* Artikel 3 */
-
+/*-----------------------------------*\
+  #ARTIKEL3
+\*-----------------------------------*/
 .judul-artikel-3 {
   padding: 2rem 10px;
   display: flex;
@@ -1030,10 +1038,102 @@ body {
   font-weight: 700;
 }
 
-/* End Artikel 3 */
+/* ---------- RESPONSIVE ARTIKEL3 480 ---------- */
+@media screen and (max-width:480px) {
+  .judul-artikel-3 {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .judul-artikel-3 p {
+    text-align: center;
+    color: #3f3f3f;
+    text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    width: 450px;
+    margin: auto;
+  }
+  
+  .border-artikel-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .border-artikel-3 span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #2d4356;
+    margin: 3px 0;
+    display: flex;
+  }
+  
+  .artikel-3 {
+    display: flex;
+    flex-direction: column;
+    height: 220vh;
+  }
+  
+  .isi-artikel-3 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .src-foto-artikel-3 {
+    display: none;
+  }
+  
+  .desk-artikel-3 {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+  
+  .text-artikel-3 {
+    width: 100px;
+  }
+  
+  .text-artikel-3 p {
+    font-size: 8px;
+  }
+  
+  .text-artikel-3 p span {
+    font-weight: 900;
+  }
+  
+  .vektor-artikel-3 img {
+    width: 100px;
+  }
+  
+  .foto-artikel-3 img {
+    width: 250px;
+  }
+  
+  .bottom-artikel-3 {
+    display: flex;
+    width: 400px;
+    margin-left: auto;
+    padding: 1rem;
+    margin-right: 0px;
+  }
+  
+  .bottom-artikel-3 p {
+    font-size: 8px;
+  }
+  
+  .bottom-artikel-3 p span {
+    font-weight: 700;
+  }
+}
 
-/* Grafik Kemiskinan */
-
+/*-----------------------------------*\
+  #GRAFIK
+\*-----------------------------------*/
 .grafik-kemiskinan {
   background-image: url("../assets/background-grafik-artikel.png");
   background-size: cover;
@@ -1042,7 +1142,7 @@ body {
 }
 
 .container-grafik {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1057,12 +1157,46 @@ body {
 }
 
 .gambar-grafik {
-  margin: 2rem 0;
+  margin: 2rem 15%;
 }
-/* End Grafik Kemiskinan */
 
-/* Footer */
+/* ---------- RESPONSIVE GRAFIK 480 ---------- */
+@media screen and (max-width:480px) {
+  .grafik-kemiskinan {
+    background-image: url("../assets/background-grafik-artikel.png");
+    background-size: cover;
+    padding: 1rem 0;
+    height: 0;
+    margin-top: -1200px;
+  }
+  
+  .container-grafik {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .judul-grafik p {
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  .judul-grafik p span {
+    font-size: 20px;
+  }
+  
+  .gambar-grafik {
+    margin: 2rem 0;
+  }
 
+  .gambar-grafik img {
+    width: 380px;
+  }
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
 footer {
   height: 400px;
   background-image: url("../assets/footer-background.png");
@@ -1159,4 +1293,101 @@ button {
   color: #000000;
 }
 
-/* End Footer */
+/* ---------- RESPONSIVE FOOTER 480 ---------- */
+@media screen and (max-width:480px) {
+  footer {
+    height: 600px;
+    background-image: url("../assets/footer-background.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 800px;
+  }
+  
+  footer p,
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container-footer {
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .logo-text {
+    width: 380px;
+  }
+  
+  .logo-text img {
+    width: 200px;
+  }
+  
+  .logo-text p {
+    color: #ffffff;
+  }
+  
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul-menu p {
+    color: #9290c3;
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+  
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+  }
+  
+  .list-menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul-form p {
+    color: #9290c3;
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+  
+  .input-form input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+  }
+  
+  .input-form button {
+    border-radius: 20px;
+    border: none;
+    background-color: #b7c4cf;
+    margin: 0 5px;
+    padding: 10px 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    margin: 10px 0;
+    margin-right: 15px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #9290c3;
+  }
+}
