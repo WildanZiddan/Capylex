@@ -133,7 +133,8 @@ body {
   }
   .kanan {
     display: flex;
-    
+    background-image: url(../assets/landing_page_background2_mobile.png);
+    background-size: cover;
     padding: 6% 0;
     width: 600px;
     align-items: center;
