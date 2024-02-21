@@ -10,11 +10,40 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555555;
+}
+
 body {
   height: 3000px;
   background-color: #ffe8ce;
 }
 
+@media screen and (max-width:480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
 .header {
   background-image: url("../assets/landing_page_background2.png"), url("../assets/landing_page_background.png");
   height: 400px;
@@ -46,22 +75,6 @@ body {
   color: #f1f1f1;
   flex-direction: column;
   font-size: 60px;
-}
-
-.kiri p {
-  font-family: "Bebas Neue", sans-serif;
-  line-height: 50px;
-}
-
-.kiri p:first-child {
-  padding-top: 5px;
-  border-top: 5px solid rgb(255, 255, 255);
-}
-
-.kiri p:last-child {
-  position: relative;
-  left: 40px;
-  border-bottom: 5px solid rgb(255, 255, 255);
 }
 
 .header-text {
@@ -111,6 +124,104 @@ body {
   text-align: center;
 }
 
+/* ---------- RESPONSIVE HEADER 480 ---------- */
+@media screen and (max-width:480px) {
+  ::-webkit-scrollbar-track{
+    display: none;
+  }
+  ::-webkit-scrollbar
+  {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb
+  {
+    display: none;
+  }
+  .header{
+    background-image: url("../assets/landing_page_background2_mobile.png"), url("../assets/landing_page_background_mobile.png");
+    height: 1300px;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position-x: center, 0;
+    background-position-y: 0, -400px;
+    box-shadow: 0 10px 7px rgb(117, 117, 117);
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+  }
+  .kanan {
+    display: flex;
+    background-image: url(../assets/landing_page_background2_mobile.png);
+    background-size: cover;
+    height: 100%;
+    padding: 6% 5%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px 0 auto;
+  }
+  
+  .kiri {
+    display: flex;
+    background-image: url(../assets/landing_page_background_mobile.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 100%;
+    width: 100%;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0;
+    padding: 60% 5% 60% 0;
+  }
+  
+  .kiri img {
+    width: 300px;
+    height: 150px;
+  }
+  .header-parent-text {
+    width: 80%;
+  }
+  
+  .header-parent-text p {
+    font-size: 28px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+  }
+  
+  .header-mini-text {
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .header-mini-text p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  
+  .header-button a {
+    padding: 3px 10px;
+    background-color: #f1f1f1;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .bottom-header {
+    border-bottom: 1px solid #9d7952;
+    margin: auto;
+    padding-top: 1rem;
+    width: 150px;
+  }
+  
+  .bottom-header p {
+    text-align: center;
+  }
+}
+
+/*-----------------------------------*\
+  #ARTIKEL
+\*-----------------------------------*/
 #artikel {
   background-image: url("../assets/background-artikel.png");
   background-size: cover;
@@ -284,11 +395,144 @@ body {
   right: 590px;
   bottom: 50px;
 }
+/* ---------- RESPONSIVE ARTIKEL1 480 ---------- */
+@media screen and (max-width:480px) {
+  #artikel {
+    background-image: url("../assets/background-artikel.png");
+    background-size: cover;
+    background-position: center;
+    height: 300vh;
+  }
+  .artikel-1 {
+    padding-top: 3rem;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  .judul-artikel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .judul-artikel p:nth-child(1) {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  
+  .judul-artikel p:nth-child(2) {
+    display: none;
+  }
+  
+  .vektor-artikel {
+    display: flex;
+    height: 9px;
+  }
+  
+  .vektor-1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+  
+  .vektor-artikel .vektor-1 img {
+    position: relative;
+    left: 170px;
+    top: 40px;
+    width: 90px;
+  }
+  
+  .vektor-artikel .vektor-1 p {
+    position: relative;
+    bottom: 20px;
+    left: 270px;
+    width: 90px;
+    font-size: 12px;
+  }
+  
+  .vektor-2 {
+    position: relative;
+    top: 0;
+    bottom: 100px;
+  }
+  
+  .vektor-2 img {
+    position: relative;
+    top: 260px;
+    left: 240px;
+    width: 40px;
+  }
+  
+  .vektor-2 p {
+    position: relative;
+    top: 220px;
+    left: 70px;
+    width: 160px;
+    font-size: 12px;
+  }
+  
+  .vektor-3 {
+    position: relative;
+    bottom: 300px;
+    right: 160px;
+  }
+  
+  .vektor-3 img {
+    position: relative;
+    top: 490px;
+    right: 80px;
+    width: 55px;
+  }
+  
+  .vektor-3 p {
+    position: relative;
+    top: 460px;
+    right: 20px;
+    width: 90px;
+    font-size: 12px;
+  }
+  
+  .foto-artikel {
+    margin: auto;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 8rem;
+    display: flex;
+  }
+  
+  .foto1 img {
+    position: relative;
+    top: 70px;
+    left: 160px;
+    width: 174px;
+  }
+  
+  .foto2 img {
+    width: 60px;
+    position: relative;
+    right: 15px;
+    bottom: 50px;
+  }
+  
+  .foto3 img {
+    width: 125px;
+    position: relative;
+    left: 0;
+    bottom: 40px;
+  }
+  
+  .foto4 img {
+    width: 100px;
+    position: relative;
+    right: 310px;
+    bottom: 50px;
+  }
+}
 
-/* End Artikel 1 */
-
-/* Artikel 2 */
-
+/*-----------------------------------*\
+  #ARTIKEL2
+\*-----------------------------------*/
 .artikel-2 {
   padding-top: 15rem;
   display: flex;
@@ -468,10 +712,229 @@ body {
   font-size: 20px;
 }
 
-/* End Artikel 2 */
+/* ---------- RESPONSIVE ARTIKEL2 480 ---------- */
+@media screen and (max-width:480px) {
+  .artikel-2 {
+    margin-top: -25rem;
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul-artikel-2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .judul-artikel-2 p {
+    text-align: center;
+    color: #3f3f3f;
+    text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    width: 200px;
+    margin: auto;
+  }
+  
+  .border-artikel-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .border-artikel-2 span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #2d4356;
+    margin: 3px 0;
+    display: flex;
+  }
+  
+  .isi-artikel {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .deskripsi-artikel {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+  }
+  
+  .desk-kanan {
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  .desk-kanan p {
+    font-size: 8px;
+  }
+  
+  .desk-kanan p span {
+    font-weight: 900;
+  }
+  
+  .desk-kiri {
+    width: 400px;
+  }
+  
+  .desk-kiri p {
+    font-size: 8px;
+  }
+  
+  .desk-kiri p span {
+    font-weight: 900;
+  }
 
-/* Artikel 3 */
+  .isi-artikel-2 {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  
+  .desk-artikel-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+  }
+  
+  .foto-artikel-2 .vektor-artikel {
+    display: flex;
+  }
+  
+  .foto-artikel-2 .vektor-artikel .vektor-1 img {
+    position: relative;
+    left: 80px;
+    top: 65px;
+    width: 15px;
+  }
+  
+  .foto-artikel-2 .vektor-artikel .vektor-2 img {
+    position: relative;
+    left: 130px;
+    top: 160px;
+    width: 50px;
+  }
+  
+  .foto-artikel-2 .foto-artikel {
+    display: flex;
+  }
+  
+  .foto-artikel-2 .foto-artikel .foto1 img {
+    position: relative;
+    top: -50px;
+    left: 200px;
+    width: 200px;
+  }
+  
+  .foto-artikel-2 .foto-artikel .foto2 img {
+    position: relative;
+    width: 90px;
+    top: -5px;
+    left: -150px;
+  }
+  
+  .foto-artikel-2 .foto-artikel .foto3 img {
+    position: relative;
+    width: 150px;
+    bottom: 170px;
+    left: -260px;
+  }
+  
+  .bottom-artikel-2 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 6rem;
+  }
+  
+  .bottom-artikel-2 p {
+    font-size: 8px;
+  }
+  
+  .bottom-artikel-2 p span {
+    font-weight: bolder;
+  }
+  
+  .data-kemiskinan-artikel-2 {
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-color: #000000a6;
+    background-blend-mode: darken;
+    background-image: url("../assets/background-data-kemiskinan.jpg");
+  }
+  
+  .data-kemiskinan-artikel-2 p {
+    color: #ffffff;
+  }
+  
+  .judul-data-kemiskinan p {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 60px;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .desk-data-kemiskinan {
+    width: 300px;
+    font-weight: lighter;
+    padding-top: 1rem;
+  }
+  
+  .desk-data-kemiskinan p {
+    color: #ffffff;
+    font-size: 6px;
+    line-height: 20px;
+  }
+  
+  .desk-data-kemiskinan p span {
+    font-style: italic;
+  }
+  
+  .desk-data-kemiskinan p span:last-child {
+    font-style: normal;
+    font-weight: 900;
+  }
+  
+  .angka-kemiskinan {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6rem;
+  }
+  
+  .angka {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 30px 10px;
+    background-color: #000000cc;
+    border-radius: 10px;
+    margin: 0 20px;
+  }
+  
+  .angka p {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .angka p:last-child {
+    font-size: 20px;
+  }
+}
 
+/*-----------------------------------*\
+  #ARTIKEL3
+\*-----------------------------------*/
 .judul-artikel-3 {
   padding: 2rem 10px;
   display: flex;
@@ -575,10 +1038,102 @@ body {
   font-weight: 700;
 }
 
-/* End Artikel 3 */
+/* ---------- RESPONSIVE ARTIKEL3 480 ---------- */
+@media screen and (max-width:480px) {
+  .judul-artikel-3 {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .judul-artikel-3 p {
+    text-align: center;
+    color: #3f3f3f;
+    text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 500;
+    width: 450px;
+    margin: auto;
+  }
+  
+  .border-artikel-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .border-artikel-3 span {
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #2d4356;
+    margin: 3px 0;
+    display: flex;
+  }
+  
+  .artikel-3 {
+    display: flex;
+    flex-direction: column;
+    height: 220vh;
+  }
+  
+  .isi-artikel-3 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .src-foto-artikel-3 {
+    display: none;
+  }
+  
+  .desk-artikel-3 {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+  
+  .text-artikel-3 {
+    width: 100px;
+  }
+  
+  .text-artikel-3 p {
+    font-size: 8px;
+  }
+  
+  .text-artikel-3 p span {
+    font-weight: 900;
+  }
+  
+  .vektor-artikel-3 img {
+    width: 100px;
+  }
+  
+  .foto-artikel-3 img {
+    width: 250px;
+  }
+  
+  .bottom-artikel-3 {
+    display: flex;
+    width: 400px;
+    margin-left: auto;
+    padding: 1rem;
+    margin-right: 0px;
+  }
+  
+  .bottom-artikel-3 p {
+    font-size: 8px;
+  }
+  
+  .bottom-artikel-3 p span {
+    font-weight: 700;
+  }
+}
 
-/* Grafik Kemiskinan */
-
+/*-----------------------------------*\
+  #GRAFIK
+\*-----------------------------------*/
 .grafik-kemiskinan {
   background-image: url("../assets/background-grafik-artikel.png");
   background-size: cover;
@@ -587,7 +1142,7 @@ body {
 }
 
 .container-grafik {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -602,12 +1157,46 @@ body {
 }
 
 .gambar-grafik {
-  margin: 2rem 0;
+  margin: 2rem 15%;
 }
-/* End Grafik Kemiskinan */
 
-/* Footer */
+/* ---------- RESPONSIVE GRAFIK 480 ---------- */
+@media screen and (max-width:480px) {
+  .grafik-kemiskinan {
+    background-image: url("../assets/background-grafik-artikel.png");
+    background-size: cover;
+    padding: 1rem 0;
+    height: 0;
+    margin-top: -1200px;
+  }
+  
+  .container-grafik {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .judul-grafik p {
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  .judul-grafik p span {
+    font-size: 20px;
+  }
+  
+  .gambar-grafik {
+    margin: 2rem 0;
+  }
 
+  .gambar-grafik img {
+    width: 380px;
+  }
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
 footer {
   height: 400px;
   background-image: url("../assets/footer-background.png");
@@ -704,4 +1293,101 @@ button {
   color: #000000;
 }
 
-/* End Footer */
+/* ---------- RESPONSIVE FOOTER 480 ---------- */
+@media screen and (max-width:480px) {
+  footer {
+    height: 600px;
+    background-image: url("../assets/footer-background.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 800px;
+  }
+  
+  footer p,
+  a,
+  button {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .container-footer {
+    width: 91%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  
+  .logo-text {
+    width: 380px;
+  }
+  
+  .logo-text img {
+    width: 200px;
+  }
+  
+  .logo-text p {
+    color: #ffffff;
+  }
+  
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul-menu p {
+    color: #9290c3;
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+  
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+  }
+  
+  .list-menu a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .form-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul-form p {
+    color: #9290c3;
+    font-size: 15px;
+    margin: 20px 0 10px;
+  }
+  
+  .input-form input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+  }
+  
+  .input-form button {
+    border-radius: 20px;
+    border: none;
+    background-color: #b7c4cf;
+    margin: 0 5px;
+    padding: 10px 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    margin: 10px 0;
+    margin-right: 15px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #9290c3;
+  }
+}
